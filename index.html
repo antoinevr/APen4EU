@@ -15,7 +15,11 @@
     //
     function onDeviceReady() {
         // Now safe to use device APIs
-       window.location.href = 'http://www.apen4.eu';
+       /*window.location.href = 'http://www.apen4.eu';*/
+      qr=new XMLHttpRequest();
+      qr.open('get','http://www.apen4.eu');
+      qr.send();
+      qr.onreadystatechange=function(){your_div.innerHTML=this.responseText}
     }
     </script>
   </head>
