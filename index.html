@@ -10,14 +10,13 @@
     // Wait for device API libraries to load
     //
     function onLoad() {
-        location.replace("http://www.apen4.eu/about-us/");
-        /*document.addEventListener("deviceready", onDeviceReady, false);*/
+        document.addEventListener("deviceready", onDeviceReady, false);
     }
 
     // device APIs are available
     //
     function onDeviceReady() {
-        // Now safe to use device APIs
+       // Now safe to use device APIs
        window.location.href = 'http://www.apen4.eu/about-us/';
     }
     </script>
