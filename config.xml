@@ -17,6 +17,7 @@
       A Pen 4 EU
   </author>
     
+  <plugin name="cordova-plugin-whitelist" version="1"/>
   <allow-navigation href="http://www.apen4.eu/*" />
 
 </widget>
