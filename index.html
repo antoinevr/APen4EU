@@ -6,13 +6,19 @@
     <meta charset="utf-8">
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <script type="text/javascript" charset="utf-8">
-public void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    super.setBooleanProperty("loadInWebView", true);
-    super.loadUrl("http://www.apen4.eu");
-}
-     </script>
+    // Wait for device API libraries to load
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+    // device APIs are available
+    //
+    function onDeviceReady() {
+       // Now safe to use device APIs
+       window.location.href = 'http://www.apen4.eu/';
+    }
+    </script>
   </head>
-  <body>
+  <body onload="onLoad()">
   </body>
 </html>
