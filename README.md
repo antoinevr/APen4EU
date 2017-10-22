@@ -1,14 +1,10 @@
-# A Blank PhoneGap App
+# A Pen 4 Europe
 
 ## Usage
-
-### PhoneGap CLI
-
-    $ phonegap create my-app --template blank
 
 ### Desktop
 
 In your browser, open the file:
 
-    /www/index.html
+    http://www.apen.eu
 
