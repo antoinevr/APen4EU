@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="eu.apen4.www" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+   <name>A Pen 4 Europe</name>
+
+    <description>
+        A Pen 4 Europe
+    </description>
+
+    <author href="http://www.apen4.eu" email="aboss@skynet.be">
+        A Pen 4 Europe
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+</widget>
