@@ -9,6 +9,10 @@
     <author href="http://www.apen4.eu" email="aboss@skynet.be">
         A Pen 4 Europe
     </author>
+
+	<plugin name="cordova-plugin-inappbrowser" />
+
     <content src="index.html" />
-    <access origin="*" />
+
+    <access origin="*" />	
 </widget>
