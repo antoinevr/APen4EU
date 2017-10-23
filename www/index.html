@@ -4,12 +4,23 @@
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
         <title>A Pen 4 Europe</title>
-    </head>
-    <body>
 		<script type="text/javascript" src="cordova.js"></script>
 		<script type="text/javascript" charset="utf-8">
-			window.open('http://www.apen4.eu/','_self','location=no');
+			//window.open('http://www.apen4.eu/','_self','location=no');
+			// Wait for device API libraries to load
+			//
+			function onLoad() {
+				document.addEventListener("deviceready", onDeviceReady, false);
+			}
+			// device APIs are available
+			//
+			function onDeviceReady() {
+			   // Now safe to use device APIs
+			   window.open('http://www.apen4.eu/','_self','location=no');
+			}
 		</script>
-		<center><img src="loading.gif" border="0"/></center>
+    </head>
+    <body onload="onLoad()">
+		<center><img src="loading.gif" border="0"/><br/>Loading</center>
     </body>
 </html>
