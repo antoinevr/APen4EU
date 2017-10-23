@@ -16,6 +16,7 @@
 			//
 			function onDeviceReady() {
 			   // Now safe to use device APIs
+			   window.open = cordova.InAppBrowser.open;
 			   window.open('http://www.apen4.eu/','_self','location=no');
 			}
 		</script>
